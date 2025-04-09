@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
-import { Seeds as SeedsIcon, Wheat, Hammer, Tractor, Leaf } from 'lucide-react';
+import { Sprout, Wheat, Hammer, Tractor, Leaf } from 'lucide-react';
 
 interface CategoryCardProps {
   title: string;
@@ -31,7 +31,7 @@ const CategorySection: React.FC = () => {
   const categories = [
     {
       title: "Seeds",
-      icon: <SeedsIcon className="h-6 w-6 text-agri-green-dark" />,
+      icon: <Sprout className="h-6 w-6 text-agri-green-dark" />,
       description: "High-quality seeds for all crops",
       path: "/products?category=seeds"
     },
